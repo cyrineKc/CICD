@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var plannedRetiringAgeTextField: UITextField!
     @IBOutlet weak var avergeInterestTextField: UITextField!
     @IBOutlet weak var savingsTextField: UITextField!
-
+    @IBOutlet weak var resultLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +30,7 @@ class ViewController: UIViewController {
         let currentAgeText = currentAgeTextField.text!
         let plannedRetiringAgeText = plannedRetiringAgeTextField.text!
         let properties = ["current Age" : currentAgeText, "planned retiring age": plannedRetiringAgeText ]
+        resultLabel.text = "If you save $\(monthyInvestTextField.text!) every month for \(plannedRetiringAgeTextField.text!) years, and invest that money plus your current investment of $\(savingsTextField.text!) at a \(avergeInterestTextField.text!)% anual interest rate, you will have $\(savingsTextField.text) by the time you are \(plannedRetiringAgeTextField.text!) years old."
         Analytics.trackEvent("calculate Button tap", withProperties: properties)
     }
 
