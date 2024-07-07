@@ -49,6 +49,12 @@
                                     <action selector="calculateButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TwI-a1-367"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwS-gd-8p4">
+                                <rect key="frame" x="68" y="493" width="257" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -57,7 +63,9 @@
                             <constraint firstItem="NSN-vh-th3" firstAttribute="top" secondItem="ssT-0h-Y52" secondAttribute="bottom" constant="23" id="284-Ey-Q0z"/>
                             <constraint firstItem="ELE-je-Xpj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="5td-88-IUt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IJm-ru-1oi" secondAttribute="trailing" constant="68" id="78f-s7-afN"/>
+                            <constraint firstItem="TwS-gd-8p4" firstAttribute="top" secondItem="oK4-Td-hQi" secondAttribute="bottom" constant="28" id="8sq-XC-YCC"/>
                             <constraint firstItem="NSN-vh-th3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="Ane-pT-fb9"/>
+                            <constraint firstItem="TwS-gd-8p4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="JHT-Sc-lPX"/>
                             <constraint firstItem="ssT-0h-Y52" firstAttribute="top" secondItem="ELE-je-Xpj" secondAttribute="bottom" constant="23" id="M2x-i3-PaS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ssT-0h-Y52" secondAttribute="trailing" constant="68" id="MdV-Nf-3vF"/>
                             <constraint firstItem="IJm-ru-1oi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="86" id="Mi6-XM-vKO"/>
@@ -68,6 +76,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NSN-vh-th3" secondAttribute="trailing" constant="68" id="edp-Lx-o8E"/>
                             <constraint firstItem="ssT-0h-Y52" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="fHx-Fp-gbc"/>
                             <constraint firstItem="y6Z-vS-KSg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="ffK-8V-Swd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TwS-gd-8p4" secondAttribute="trailing" constant="68" id="oid-xa-lJ1"/>
                             <constraint firstItem="y6Z-vS-KSg" firstAttribute="top" secondItem="IJm-ru-1oi" secondAttribute="bottom" constant="23" id="wo2-iX-vhE"/>
                         </constraints>
                     </view>
@@ -76,6 +85,7 @@
                         <outlet property="currentAgeTextField" destination="y6Z-vS-KSg" id="Tvj-gE-dDN"/>
                         <outlet property="monthyInvestTextField" destination="IJm-ru-1oi" id="IlI-Aa-R64"/>
                         <outlet property="plannedRetiringAgeTextField" destination="ELE-je-Xpj" id="9yP-GU-eB7"/>
+                        <outlet property="resultLabel" destination="TwS-gd-8p4" id="gfz-sc-vwV"/>
                         <outlet property="savingsTextField" destination="NSN-vh-th3" id="Oof-v1-YXB"/>
                     </connections>
                 </viewController>
